@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-image: url(redes2.jpeg); /* Substitua pelo caminho da sua imagem */
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Sobreposição escura */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7); /* Controle a opacidade conforme necessário */
+    z-index: 1;
+}
+
+.resume {
+    width: 60%;
+    background-color: rgba(27, 27, 27, 0.85); /* Leve transparência para fundo do conteúdo */
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #3f3f3f;
+    position: relative;
+    z-index: 2;
+}
+
+header {
+    text-align: center;
+    color: #33b8ff;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+header p {
+    font-size: 1em;
+    color: #b9b9b9;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    z-index: 2;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    color: #33b8ff;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #b9b9b9;
+}
+
+.content-section {
+    display: none;
+    margin-top: 20px;
+}
+
+.content-section.active {
+    display: block;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #33b8ff;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #33b8ff;
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 10px;
+}
+
+ul li {
+    font-size: 1em;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.contact p, .personal-info ul li {
+    color: #b9b9b9;
+}
+
+.skills ul li {
+    color: #33b8ff;
+}
+
+.resume p {
+    font-size: 0.9em;
+    color: #b9b9b9;
+}
+/* Estilo para links */
+.content-section a {
+    color: #33b8ff; /* Azul padrão */
+    text-decoration: none;
+}
+
+.content-section a:hover {
+    color: #33b8ff; /* Azul mais escuro ao passar o mouse */
+    text-decoration: underline;
+}
